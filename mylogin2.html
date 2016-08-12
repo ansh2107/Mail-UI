@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login_page</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style_login.css">
+
+
+<script src="js.js"></script>
+
+ <script type="text/javascript">
+
+ $('.forgot-pass').click(function(event) {
+      $(".pr-wrap").toggleClass("show-pass-reset");
+    }); 
+    
+    $('.pass-reset-submit').click(function(event) {
+      $(".pr-wrap").removeClass("show-pass-reset");
+    }); 
+});
+ </script>
+ 
+
+</head> 
+
+<body>
+
+
+
+
+            <div class="wrap">
+                <p class="form-title">
+                    Sign In</p>
+                <form class="login" method="post" action="newlogin.php">
+                <input type="text" placeholder="Username" name="uname"/>
+                <input type="password" placeholder="Password" name="pass"/>
+                <input type="submit" value="Sign In" class="btn btn-success btn-sm" />
+                <div class="remember-forgot">
+                    
+                  
+                    <div class="row">
+                    <table style="width:110%" >
+                     <tr> 
+                     <td>
+                     <div class="col-md-6">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" />
+                                    <font color="white">Remember Me</font>
+                                </label>
+                            </div>
+                        </div>
+                        </td>
+                        <td>
+                        <div class="col-md-6 forgot-pass-content">
+                            <a href="javascription:void(0)" class="forgot-pass"><font color="white">Forgot Password</font></a>
+                           </div>
+                           </td>
+                        </tr>
+                          </table>
+                    </div>
+              
+                </div>
+                <div class="col-md-6 forgot-pass-content">
+                <a href="res_form.html" class=""><font color="white">Create an account</font></a>
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+
+
+</body>
+</html>
+
